@@ -31,6 +31,23 @@ Para cambiarlo en el futuro, reemplazá ese mismo archivo.
 - `SITE_URL` — el dominio final cuando lo tengas
 
 ## Secciones
-Inicio · El producto · Modelos · La idea detrás · Nosotros · Comprar
+Inicio · Características · Modelos · Nuestro enfoque · Nosotros · Comprar
 
 El contenido es propio: no repite los textos del Instagram.
+
+## Publicar en DonWeb (hosting común / cPanel)
+
+El sitio es 100% estático. `npm run build` genera la carpeta `out/` con todo
+lo que hay que subir.
+
+1. `npm run build`
+2. Entrá al **cPanel de DonWeb** → *Administrador de archivos*
+3. Abrí la carpeta `public_html` (borrá lo que haya de ejemplo: `index.html`, etc.)
+4. Subí **todo el contenido de `out/`** ahí adentro
+   (o subí `sensoria-web.zip` y usá "Extraer" dentro de `public_html`)
+5. Listo: entrá a tu dominio
+
+Cada vez que cambies algo: `npm run build` y volvés a subir `out/`.
+
+> Antes de la primera publicación, poné tu dominio real en `SITE_URL`
+> dentro de `lib/site.ts` (afecta el sitemap y los datos para Google).

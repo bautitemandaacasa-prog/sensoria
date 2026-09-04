@@ -34,7 +34,7 @@ export const MODELOS: Modelo[] = [
       "Cuellito de descanso para el uso cotidiano. Brinda un sostén uniforme para la cabeza y el cuello en viajes, siestas y traslados.",
     incluye: [
       "Relleno que conserva la forma",
-      "Funda de material reciclable",
+      "Confeccionado con materiales reciclables",
       "Liviano y fácil de transportar",
     ],
   },

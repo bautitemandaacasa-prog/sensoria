@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import Leaf from "./Leaf";
-import { Wind, MoveHorizontal, Leaf as LeafIcon, Waves, Backpack, Droplets } from "lucide-react";
+import { Wind, MoveHorizontal, Leaf as LeafIcon, Waves, Backpack } from "lucide-react";
 
 const ITEMS = [
   {
@@ -27,11 +27,6 @@ const ITEMS = [
     icon: LeafIcon,
     title: "Materiales reciclables",
     text: "Las telas y los rellenos son reciclables, en línea con nuestro compromiso ambiental.",
-  },
-  {
-    icon: Droplets,
-    title: "Funda lavable",
-    text: "La funda es removible y lavable, pensada para el uso diario.",
   },
 ];
 

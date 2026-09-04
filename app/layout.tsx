@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sensoria | Cuellitos de descanso para viajar",
     description:
-      "Dos modelos: Básico y Sensorial (pensado para personas neurodivergentes). Materiales reciclables, funda lavable.",
+      "Dos modelos: Básico y Sensorial (pensado para personas neurodivergentes). Materiales reciclables.",
     type: "website",
     locale: "es_AR",
     siteName: "Sensoria",
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "Product",
     name: "Cuellito de descanso Sensoria",
     description:
-      "Cuellito de descanso para viajes y traslados. Sostén que se adapta a cada persona, materiales reciclables y funda lavable. Disponible en modelo Básico y en modelo Sensorial pensado para personas neurodivergentes.",
+      "Cuellito de descanso para viajes y traslados. Sostén que se adapta a cada persona y materiales reciclables. Disponible en modelo Básico y en modelo Sensorial pensado para personas neurodivergentes.",
     brand: { "@type": "Brand", name: "Sensoria" },
     category: "Accesorios de viaje",
     url: SITE_URL,
