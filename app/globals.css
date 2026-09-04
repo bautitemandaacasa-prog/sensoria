@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap");
+
+:root {
+  --cream:   #EFEAE0;
+  --cream-d: #E4DECF;
+  --sand:    #C9C3A9;
+  --sage:    #9AA678;
+  --sage-d:  #7C8A5B;
+  --olive:   #5B6842;
+  --forest:  #3B4A2E;
+  --ink:     #2C3421;
+  --muted:   #6B7358;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 20px;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection { background: var(--sage); color: var(--forest); }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--cream-d); }
+::-webkit-scrollbar-thumb { background: var(--sage); border-radius: 6px; }
+
+/* Tipografía */
+.font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+.font-sans    { font-family: 'Inter', system-ui, sans-serif; }
+.font-grotesk { font-family: 'Space Grotesk', system-ui, sans-serif; }
+
+.label {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+
+/* Secciones */
+.section {
+  padding: clamp(4.5rem, 9vw, 8rem) 0;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 4rem);
+}
+
+.wrap-narrow {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 4rem);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/*
+ * Entrada suave. Clave: el estado FINAL es visible y es el default,
+ * así el contenido se ve siempre (aunque el navegador congele animaciones).
+ */
+.reveal {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    /* sin fill-mode: si la animación no corre, el elemento queda visible */
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
