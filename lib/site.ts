@@ -22,6 +22,8 @@ export type Modelo = {
   precio: string;
   resumen: string;
   incluye: string[];
+  /** foto del producto en public/images (sin espacios en el nombre) */
+  imagen: string;
   destacado?: boolean;
 };
 
@@ -30,6 +32,7 @@ export const MODELOS: Modelo[] = [
     id: "basico",
     nombre: "Sensoria Básico",
     precio: "$20.000",
+    imagen: "/images/cuellito-basico.png",
     resumen:
       "Cuellito de descanso para el uso cotidiano. Brinda un sostén uniforme para la cabeza y el cuello en viajes, siestas y traslados.",
     incluye: [
@@ -43,6 +46,7 @@ export const MODELOS: Modelo[] = [
     nombre: "Sensoria Sensorial",
     subtitulo: "Desarrollado para personas neurodivergentes",
     precio: "$24.000",
+    imagen: "/images/cuellito-sensorial.png",
     resumen:
       "Incorpora una presión envolvente y una textura seleccionada para aportar contención y acompañar la regulación sensorial en entornos de alto estímulo.",
     incluye: [

@@ -34,6 +34,20 @@ export default function Modelos() {
                     : "bg-cream-d border border-olive/15 text-ink"
                 }`}
               >
+                <div
+                  className={`rounded-2xl mb-6 h-[220px] flex items-center justify-center ${
+                    m.destacado ? "bg-cream/10" : "bg-cream"
+                  }`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={m.imagen}
+                    alt={`Cuellito ${m.nombre}`}
+                    loading="lazy"
+                    className="h-[190px] w-auto object-contain"
+                  />
+                </div>
+
                 {m.destacado && (
                   <span className="self-start font-grotesk text-[10px] tracking-[0.2em] uppercase bg-sage/30 text-cream px-3 py-1 rounded-full mb-5">
                     Enfoque sensorial
