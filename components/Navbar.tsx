@@ -9,6 +9,7 @@ const LINKS = [
   { href: "#modelos", label: "Modelos" },
   { href: "#historia", label: "Nosotros" },
   { href: "#comprar", label: "Comprar" },
+  { href: "/resenas", label: "Reseñas" },
 ];
 
 export default function Navbar() {
