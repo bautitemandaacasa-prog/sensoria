@@ -118,7 +118,7 @@ export default function ReviewSection() {
           <Leaf size={38} className="text-olive mx-auto" />
           <p className="label mt-5">Tu opinión nos importa</p>
           <h1 className="font-display text-forest text-[clamp(2rem,5vw,3.2rem)] font-light leading-tight mt-3">
-            ¿Cómo estuvo tu Sensoria?
+            Valoramos tu opinión!
           </h1>
           <p className="text-muted text-[1.05rem] max-w-[46ch] mt-4">
             Entrá con tu cuenta de Google y contanos qué te pareció.
